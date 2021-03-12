@@ -1,0 +1,41 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 70px;
+}
+form p{
+    color: red;
+}
+form{
+    max-width: 40%;
+    margin: auto;
+}
+button{
+    width: 100%;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    cursor: pointer;
+    outline: none;
+    background: #1976d2;
+    color: white;
+    border-radius: 20px;
+    transition: .5s background;
+    will-change: background;
+}
+button:hover{
+    background: rgb(2, 2, 179);
+}
+form input,textarea{
+    min-width: stretch;
+    max-width: fit-content;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-bottom: 2.5px solid blue;
+    background: #5b5bdb5e;
+    margin: 10px 0px;
+    outline: none;
+}

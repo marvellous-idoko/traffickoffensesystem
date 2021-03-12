@@ -1,0 +1,119 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../assets/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: FirstFont;
+    src: url(../../assets/GrenzeGotisch-ExtraBold.ttf);
+}
+h1{
+    margin: auto;
+}
+section h1:nth-child(2){
+    animation: tt 1s 1.2s forwards;
+    visibility: hidden;
+}
+@keyframes tt{
+    0%{
+        opacity: 0;
+        font-size: 176px;
+    }
+    80%{
+        font-size: 176px;
+    }
+    100%{
+        font-size: 100px;
+        visibility: visible;
+    }
+
+}
+p{
+    visibility: hidden;
+    animation: 3s ji forwards;
+}
+@keyframes ji{
+    0%{
+        visibility: hidden;
+    }
+    80%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+
+
+}
+section h1{
+    line-height: 1;
+    color: #1976d2;
+    animation: ii 1s forwards;
+}
+section>div{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    transform: translateY(100px);
+}
+section{
+    height: 100%;
+}
+@keyframes ii{
+    0%{
+        opacity: 0;
+        font-size: 176px;
+        transform: translateY(50%);
+        }
+
+    80%{
+        font-size: 176px;
+        transform: translateY(50%);
+    }
+    to{
+        font-size: 100px;
+        transform: translateY(0%);
+
+    }
+}
+figure{
+    width: inherit;
+    height: inherit;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px
+}
+#bannerPg{
+    display: flex; 
+    align-items:  center;
+justify-content: center;
+}
+@media screen and (min-width: 1080px) {
+    #banner{
+        width: inherit;
+        height: inherit;
+        
+    }
+    #bannerPkg{
+        height: 605px;
+        max-width: 1192px;
+        width: 1192px;
+        
+    }
+}
+
+code{
+    font-size: large;
+}
+p{
+    line-height: 32px;
+    letter-spacing: -0.003em;
+    font-family: myFirstFont;
+}
+h1, h2, h3{
+    font-family: FirstFont;
+}
+.alignCenter{
+    max-width: 680px;
+    margin: auto;
+}

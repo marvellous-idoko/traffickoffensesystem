@@ -1,0 +1,40 @@
+<section>
+
+    <div>
+        <h2 style="text-align: center;">Input Driver Information</h2>
+        <form [formGroup]="carOwnerInfo" (ngSubmit)="onSubmit()">
+            <input placeholder="First name" type="text" formControlName="firstName">
+            <p *ngIf="carOwnerInfo.controls['firstName'].hasError('pattern')">
+                Input a valid First Name
+            </p>
+            <input placeholder="Last name" type="text" formControlName="lastName">
+            <p *ngIf="carOwnerInfo.controls['lastName'].hasError('pattern')">
+                Input a valid Last Name
+            </p>
+
+            <input placeholder="Contact" type="tel" formControlName="contact">
+            <p *ngIf="carOwnerInfo.controls['contact'].hasError('pattern')">
+                Input a valid phone number
+            </p>
+            <input placeholder="email" type="email" formControlName="email">
+            <p *ngIf="carOwnerInfo.controls['email'].hasError('pattern')">
+                Input a valid email Address
+            </p>
+
+            <textarea placeholder="Contact Address" row="2" formControlName="address"></textarea>
+            <p *ngIf="carOwnerInfo.controls['address'].hasError('required')">
+                Input a valid Address
+            </p>
+            <input placeholder="Plate Number" type="text" formControlName="plateNo">
+            <p *ngIf="carOwnerInfo.controls['plateNo'].hasError('required')">
+                Input a valid Plate Number
+            </p>
+
+            <input placeholder="Drivers ID" type="text" formControlName="driversId">
+            <p *ngIf="carOwnerInfo.controls['driversId'].hasError('required')">
+                Input a valid Drivers'ID
+            </p>
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+</section>
