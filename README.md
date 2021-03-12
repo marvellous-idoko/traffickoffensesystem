@@ -2,8 +2,10 @@
 How far guy no go give another person this stuff oh abeg 
 naa suitable database wey no go to disturb you, na ihn i dey fine
 jus use this link to see the project live
+`https://marvellous-idoko.github.io/traffickoffensesystem/`
 
 as we continue i go send you how to run it locally
+if you also want make the 
 # Traffick Offense System
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
